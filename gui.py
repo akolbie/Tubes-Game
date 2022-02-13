@@ -7,7 +7,7 @@ import sys
 from math import floor, ceil
 from board import Board, Square
 
-SCREEN_WIDTH = 250
+SCREEN_WIDTH = 500
 SCREEN_HEIGHT = 500
 
 class Cell_GUI():
@@ -186,7 +186,7 @@ class Board_GUI():
 
 
 if __name__ == "__main__":
-    x = Board(width = 5, height = 10)
+    x = Board(width = randint(5, 10), height = randint(5, 10))
     y = Board_GUI(x, (randint(0, 255), randint(0, 255), randint(0, 255)), (0, 0, 0))
     y.make_drawn_grid()
     y.run_game()
